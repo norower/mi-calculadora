@@ -64,7 +64,6 @@ body {
 .double { flex-basis: 47%; }
 .triple { flex-basis: 73%; }
 
-/* El último botón suele ser el de operación o igual */
 .calc-button:last-child {
     background: #d118ff;
     color: white;
