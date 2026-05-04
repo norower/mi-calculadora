@@ -1,0 +1,71 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: linear-gradient(320deg, #eb92be, #ff78ff, #c098b7);
+    display: flex;
+    font-family: sans-serif;
+    height: 100vh;
+    justify-content: center;
+}
+
+.wrapper {
+    backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    width: 400px;
+    padding: 20px;
+}
+
+.screen {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 16px;
+    font-size: 40px;
+    padding: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+    min-height: 80px;
+}
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.calc-button {
+    background: rgba(255, 255, 255, 0.75);
+    border: none;
+    border-radius: 10px;
+    flex-basis: 22%;
+    height: 60px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.calc-button:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.calc-button:active {
+    background: #de95ff;
+}
+
+.double { flex-basis: 47%; }
+.triple { flex-basis: 73%; }
+
+/* El último botón suele ser el de operación o igual */
+.calc-button:last-child {
+    background: #d118ff;
+    color: white;
+}
