@@ -5,7 +5,6 @@ let previousOperator = null;
 const screen = document.querySelector(".screen");
 
 function buttonClick(value) {
-    // IMPORTANTE: .trim() elimina los espacios que tienes en tu HTML
     const cleanValue = value.trim();
     
     if (isNaN(cleanValue)) {
